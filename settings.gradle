@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "smartguard_using_data_bind"

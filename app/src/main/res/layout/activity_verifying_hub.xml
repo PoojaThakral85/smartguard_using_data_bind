@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="verifying_hub_label_1"
+            type="String" />
+        <variable
+            name="verifying_hub_label_2"
+            type="String" />
+        <variable
+            name="verifying_hub_label_3"
+            type="String" />
+        <variable
+            name="verifying_hub_label_4"
+            type="String" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyingHubActivity">
+
+    <TextView
+        android:id="@+id/textView1_verifying_hub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{verifying_hub_label_1}"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_2_verifying_hub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_2_verifying_hub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{verifying_hub_label_2}"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_verifying_hub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1_verifying_hub" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_verifying_hub"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView_3_verifying_hub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_2_verifying_hub" />
+
+    <TextView
+        android:id="@+id/textView_3_verifying_hub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{verifying_hub_label_3}"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_4_verifying_hub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_verifying_hub" />
+
+    <TextView
+        android:id="@+id/textView_4_verifying_hub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{verifying_hub_label_4}"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3_verifying_hub" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

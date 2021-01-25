@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartguard_using_data_bind">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/guard"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/guard"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ConfirmtoremoveuserActivity"></activity>
+        <activity android:name=".VerifyingHubActivity" />
+        <activity android:name=".SensorAddedActivity" />
+        <activity android:name=".verificationcomplete" />
+        <activity android:name=".DoneActivity" />
+        <activity android:name=".IntroActivity4" />
+        <activity android:name=".IntroActivity3" />
+        <activity android:name=".IntroActivity2" />
+        <activity android:name=".IntroActivity1" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".IntroductionActivity" />
+        <activity android:name=".MainActivitySplash" />
+        <activity
+            android:name=".AddNewHubActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

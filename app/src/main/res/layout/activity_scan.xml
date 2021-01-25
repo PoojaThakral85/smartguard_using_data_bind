@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="scan_labell"
+            type="String" />
+        <variable
+            name="scan_label2"
+            type="String" />
+        <variable
+            name="scan_label3"
+            type="String" />
+        <variable
+            name="scan_label4"
+            type="String" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity">
+
+    <TextView
+        android:id="@+id/textView_1_scanning_for_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{scan_labell}"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_1_scanning_for_sensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_1_scanning_for_sensor"
+        android:layout_width="127dp"
+        android:layout_height="78dp"
+        android:contentDescription="@string/signal"
+        app:layout_constraintBottom_toTopOf="@+id/textView_2_scanning_for_sensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_1_scanning_for_sensor"
+        app:srcCompat="@drawable/wifi" />
+
+    <TextView
+        android:id="@+id/textView_2_scanning_for_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@{scan_label2}"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_3_scanning_for_sensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_1_scanning_for_sensor" />
+
+    <TextView
+        android:id="@+id/textView_3_scanning_for_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{scan_label3}"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_4_scanning_for_sensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_2_scanning_for_sensor" />
+
+    <TextView
+        android:id="@+id/textView_4_scanning_for_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@{scan_label4}"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3_scanning_for_sensor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
